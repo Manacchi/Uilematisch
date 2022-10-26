@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"mikestead.dotenv",
+		"ms-vscode.vscode-typescript-next"
+	]
+}

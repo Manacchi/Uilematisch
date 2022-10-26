@@ -1,0 +1,106 @@
+const { TSESLint } = require('@typescript-eslint/utils');
+
+/** @type {TSESLint.Linter.Config} */
+module.exports = {
+  env: {
+    node: true,
+    es6: true,
+  },
+  extends: ['eslint:recommended', 'plugin:jsdoc/recommended'],
+  ignorePatterns: 'dist',
+  overrides: [{
+    files: [
+      '*.cts',
+      '*.mts',
+      '*.ts',
+    ],
+    extends: ['plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking'],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+      project: './tsconfig.json',
+      tsconfigRootDir: __dirname,
+    },
+    rules: { '@typescript-eslint/explicit-function-return-type': 'error' },
+  }],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: ['@typescript-eslint', 'jsdoc'],
+  root: true,
+  rules: {
+    'array-bracket-newline': ['error', { minItems: 3 }],
+    'array-element-newline': ['error', {
+      ArrayExpression: { minItems: 3 },
+      ArrayPattern: { minItems: 5 },
+    }],
+    'arrow-parens': ['error', 'always'],
+    'arrow-spacing': ['warn', {
+      before: true,
+      after: true,
+    }],
+    'brace-style': [
+      'error',
+      'stroustrup',
+      { allowSingleLine: true },
+    ],
+    'comma-dangle': ['error', 'always-multiline'],
+    'comma-spacing': 'error',
+    'comma-style': 'error',
+    curly: [
+      'error',
+      'multi-line',
+      'consistent',
+    ],
+    'dot-location': ['error', 'property'],
+    'handle-callback-err': 'off',
+    indent: [
+      'error',
+      2,
+      { SwitchCase: 1 },
+    ],
+    'keyword-spacing': 'error',
+    'max-nested-callbacks': ['error', { max: 4 }],
+    'max-statements-per-line': ['error', { max: 2 }],
+    'no-console': 'off',
+    'no-empty-function': 'error',
+    'no-floating-decimal': 'error',
+    'no-inline-comments': 'error',
+    'no-lonely-if': 'error',
+    'no-multi-spaces': 'error',
+    'no-multiple-empty-lines': ['error', {
+      max: 2,
+      maxEOF: 1,
+      maxBOF: 0,
+    }],
+    'no-shadow': ['error', { allow: [
+      'err',
+      'resolve',
+      'reject',
+    ] }],
+    'no-trailing-spaces': 'error',
+    'no-var': 'error',
+    'object-curly-spacing': ['error', 'always'],
+    'object-curly-newline': ['error', {
+      ObjectExpression: { minProperties: 2 },
+      ObjectPattern: { minProperties: 5 },
+      ImportDeclaration: { minProperties: 5 },
+      ExportDeclaration: { minProperties: 5 },
+    }],
+    'object-property-newline': 'error',
+    'prefer-const': 'error',
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
+    'space-before-blocks': 'error',
+    'space-before-function-paren': ['error', {
+      anonymous: 'never',
+      named: 'never',
+      asyncArrow: 'always',
+    }],
+    'space-in-parens': 'error',
+    'space-infix-ops': 'error',
+    'space-unary-ops': 'error',
+    'spaced-comment': 'error',
+    yoda: 'error',
+  },
+};
