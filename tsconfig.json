@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "ESNext"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "ESNext",
+    "rootDir": "src",
+    "moduleResolution": "Node16",
+    "baseUrl": "src",
+    "paths": {
+      "#config": [
+        "config.ts"
+      ],
+      "#interfaces": [
+        "interfaces/index.ts"
+      ],
+      "#structures/*": [
+        "structures/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    // "declaration": true,
+    "outDir": "dist",
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "extends": "ts-node/node16/tsconfig.json",
+  "include": [
+    "src"
+  ],
+  "ts-node": {
+    "esm": true,
+    "files": true,
+    "transpileOnly": true
+  }
+}

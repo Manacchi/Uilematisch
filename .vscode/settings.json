@@ -1,0 +1,9 @@
+{
+  "editor.detectIndentation": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "js/ts.implicitProjectConfig.target": "ESNext",
+  "typescript.preferences.quoteStyle": "single"
+}
