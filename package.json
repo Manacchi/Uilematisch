@@ -21,7 +21,10 @@
   "type": "module",
   "imports": {
     "#config": "./src/config.ts",
+    "#helpers/*": "./src/helpers/*",
     "#interfaces": "./src/interfaces/index.ts",
+    "#models": "./src/models/index.ts",
+    "#src/*": "./src/*",
     "#structures/*": "./src/structures/*"
   },
   "exports": null,
@@ -30,7 +33,9 @@
     "build:watch": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")",
     "lint": "eslint .",
     "start": "ts-node ./src/index.ts -r",
-    "start:dist": "node ./dist/index.js -r"
+    "start:dist": "node ./dist/index.js -r",
+    "sync": "ts-node ./src/dbInit.ts -a",
+    "sync:dist": "node ./src/dbInit.ts -a"
   },
   "dependencies": {
     "@discordjs/opus": "^0.9.0",
@@ -46,7 +51,9 @@
     "distube": "^4.0.4",
     "dotenv": "^16.0.3",
     "libsodium-wrappers": "^0.7.10",
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "sequelize": "^6.26.0",
+    "sqlite3": "^5.1.2"
   },
   "devDependencies": {
     "@types/common-tags": "^1.8.1",

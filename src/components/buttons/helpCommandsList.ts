@@ -23,6 +23,14 @@ export const component: Button = {
           inline: true,
         },
         {
+          name: 'Bot',
+          value: stripIndent`
+            </balance:1044914902340481095> </inventory:1044914902340481096> </leaderboard:1044914902340481097>
+            </shop:1044914902340481098> </transfer:1044914902340481099>
+          `,
+          inline: true,
+        },
+        {
           name: 'Fun',
           value: stripIndent`
             </8ball:1015631971617091620> </coin:1015631971617091621> </dice:1015631971617091622>

@@ -10,6 +10,7 @@ import {
   SelectMenu,
   SlashCommand,
   UserContextMenuCommand,
+  UsersModel,
 } from '#interfaces';
 import { SoundCloudPlugin } from '@distube/soundcloud';
 import { SpotifyPlugin } from '@distube/spotify';
@@ -47,6 +48,7 @@ export class ExtendedClient extends Client {
   });
 
   public buttons: Collection<string, Button> = new Collection();
+  public currency: Collection<string, UsersModel> = new Collection();
   public messageContextMenuCommands: Collection<string, MessageContextMenuCommand> = new Collection();
   public modals: Collection<string, Modal> = new Collection();
   public selectMenus: Collection<string, SelectMenu> = new Collection();

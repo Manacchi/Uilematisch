@@ -14,8 +14,17 @@
       "#config": [
         "config.ts"
       ],
+      "#helpers/*": [
+        "helpers/*"
+      ],
       "#interfaces": [
         "interfaces/index.ts"
+      ],
+      "#models": [
+        "models/index.ts"
+      ],
+      "#src/*": [
+        "*"
       ],
       "#structures/*": [
         "structures/*"

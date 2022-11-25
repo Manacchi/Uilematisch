@@ -37,9 +37,12 @@ INVITE_LINK=
 2. Install **[FFmpeg](https://www.ffmpeg.org/download.html)** on your machine.
 3. Clone the repository onto your machine.
 4. Open your console/terminal in the cloned repository.
-5. Write the following command in the console/terminal:
+5. Write the following commands in the console/terminal:
 ```bash
 npm install
+```
+```bash
+npm run sync
 ```
 6. **[Configure the bot](#bot-config)**.
 7. To start the bot, write the following command in the console:
