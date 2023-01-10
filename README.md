@@ -8,7 +8,7 @@
   [![PullRequests](https://img.shields.io/github/issues-pr/Manacchi/Uilematisch?&labelColor=222222&style=for-the-badge)](https://github.com/Manacchi/Uilematisch/pulls)
 
   [![Discord.js](https://img.shields.io/static/v1?style=for-the-badge&message=v14&color=5865F2&logo=Discord&logoColor=5865F2&label=Discord.JS&labelColor=222222)](https://discord.js.org/#/)
-  [![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=v4.8&color=3178C6&logo=TypeScript&logoColor=3178C6&label=TypeScript&labelColor=222222)](https://www.typescriptlang.org/)
+  [![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=v4.9&color=3178C6&logo=TypeScript&logoColor=3178C6&label=TypeScript&labelColor=222222)](https://www.typescriptlang.org/)
 </div>
 
 ---
